@@ -1,4 +1,5 @@
-Brief
+**Brief**
+
 In this project, I explored a large dataset of tweets collected from
 the Twitter API. There are several data analysis and critical reflection tasks that I completed.
 The main aim of the project is to use the data supplied to find real-world events
@@ -6,7 +7,8 @@ that happened in Europe during a specified period (i.e. March 2020). As well as 
 technical challenges of handling a large and complex dataset, I undertook
 several data analysis tasks to identify and characterise events.
 
-Dataset
+**Dataset**
+
 The dataset consists of tweets collected from the Twitter API during the
 period March 1st to March 31st 2020. These tweets were collected using a
 geographical filter specifying a rectangular box over Europe. The bounding box used
@@ -21,7 +23,8 @@ Each file contains a tweet on every line. Tweets are stored as JSON objects, as
 described in the Twitter developer documentation. In particular, as these are located
 tweets, pay attention to the difference between “place” tags and “coordinates” tags.
 
-Data Pre-processing
+**Data Pre-processing**
+
 Out of all the data available in JSON form, 32 separate db tables were created. 31 tables are
 maintaining the tweets related data each containing the tweet data for a day of March month.
 They have attributes like tweet_id, user_id, tweet_text, created_at, user_mentions, boud_lat,
@@ -30,6 +33,8 @@ answer the questions. The primary key for these 31 tables is tweet_id which is u
 is maintained for user details like user_id and user_name. Each table has tweet data of a day of
 March month that is relevant to complete all the tasks. In addition, a user table is also created to
 maintain user data. SQLITE database is used for storing this data.
+
+**Reflection**
 
 Social media has interesting use cases in a variety of research disciplines, such as media, communication, sociology, political science, computer science, engineering, etc. Twitter being one of the most used social media platforms remains an appropriate choice to get data to conduct such research [1].  Twitter data can be helpful in analyzing and management of emergency situations or extreme circumstances. These circumstances can be riots, natural disasters, and other crisis events. Authorities concerned with emergency management can utilize Twitter data to improve their position in responding to emergency situations. Twitter data contain valuable metadata, including geospatial data, such as precise latitude and longitude coordinates of the tweet location. Tweeter API is an open and powerful API, which makes it easy for researchers and developers to use it. Twitter has a strong hashtag culture that makes it easy to center the research on a particular topic.
 
